@@ -1,0 +1,165 @@
+com.roscopeco.ormdroid.BuildConfig -> com.roscopeco.ormdroid.BuildConfig:
+    boolean DEBUG -> DEBUG
+com.roscopeco.ormdroid.Column -> com.roscopeco.ormdroid.Column:
+    java.lang.String name() -> name
+    boolean primaryKey() -> primaryKey
+    boolean inverse() -> inverse
+    boolean forceMap() -> forceMap
+com.roscopeco.ormdroid.DateTypeMapping -> com.roscopeco.ormdroid.DateTypeMapping:
+    java.lang.Class mJavaType -> mJavaType
+    java.lang.String mSqlType -> mSqlType
+    java.lang.Class javaType() -> javaType
+    java.lang.String sqlType(java.lang.Class) -> sqlType
+    java.lang.String encodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> encodeValue
+    java.lang.Object decodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Class,android.database.Cursor,int) -> decodeValue
+com.roscopeco.ormdroid.Entity -> com.roscopeco.ormdroid.Entity:
+    java.util.HashMap entityMappings -> entityMappings
+    boolean mTransient -> mTransient
+    com.roscopeco.ormdroid.Entity$EntityMapping mMappingCache -> mMappingCache
+    com.roscopeco.ormdroid.Entity$EntityMapping getEntityMapping(java.lang.Class) -> getEntityMapping
+    com.roscopeco.ormdroid.Entity$EntityMapping getEntityMappingEnsureSchema(android.database.sqlite.SQLiteDatabase,java.lang.Class) -> getEntityMappingEnsureSchema
+    com.roscopeco.ormdroid.Query query(java.lang.Class) -> query
+    boolean isTransient() -> isTransient
+    com.roscopeco.ormdroid.Entity$EntityMapping getEntityMapping() -> getEntityMapping
+    com.roscopeco.ormdroid.Entity$EntityMapping getEntityMappingEnsureSchema(android.database.sqlite.SQLiteDatabase) -> getEntityMappingEnsureSchema
+    java.lang.Object getPrimaryKeyValue() -> getPrimaryKeyValue
+    int save(android.database.sqlite.SQLiteDatabase) -> save
+    int save() -> save
+    void delete(android.database.sqlite.SQLiteDatabase) -> delete
+    void delete() -> delete
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.roscopeco.ormdroid.Entity$EntityMapping -> com.roscopeco.ormdroid.Entity$EntityMapping:
+    java.lang.String TAG -> TAG
+    java.util.regex.Pattern MATCH_DOTDOLLAR -> MATCH_DOTDOLLAR
+    java.lang.Class mMappedClass -> mMappedClass
+    java.lang.String mTableName -> mTableName
+    java.lang.reflect.Field mPrimaryKey -> mPrimaryKey
+    java.lang.String mPrimaryKeyColumnName -> mPrimaryKeyColumnName
+    java.util.ArrayList mColumnNames -> mColumnNames
+    java.util.ArrayList mFields -> mFields
+    boolean mSchemaCreated -> mSchemaCreated
+    com.roscopeco.ormdroid.Entity$EntityMapping build(java.lang.Class) -> build
+    void createSchema(android.database.sqlite.SQLiteDatabase) -> createSchema
+    boolean isPrimaryKey(java.lang.reflect.Field) -> isPrimaryKey
+    java.lang.Object getPrimaryKeyValue(com.roscopeco.ormdroid.Entity) -> getPrimaryKeyValue
+    void setPrimaryKeyValue(com.roscopeco.ormdroid.Entity,java.lang.Object) -> setPrimaryKeyValue
+    java.lang.String processValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> processValue
+    java.lang.String getColNames() -> getColNames
+    java.lang.String getFieldValues(android.database.sqlite.SQLiteDatabase,com.roscopeco.ormdroid.Entity) -> getFieldValues
+    java.lang.String getSetFields(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> getSetFields
+    java.lang.String stripTrailingComma(java.lang.String) -> stripTrailingComma
+    int insert(android.database.sqlite.SQLiteDatabase,com.roscopeco.ormdroid.Entity) -> insert
+    void update(android.database.sqlite.SQLiteDatabase,com.roscopeco.ormdroid.Entity) -> update
+    com.roscopeco.ormdroid.Entity load(android.database.sqlite.SQLiteDatabase,android.database.Cursor) -> load
+    java.util.List loadAll(android.database.sqlite.SQLiteDatabase,android.database.Cursor) -> loadAll
+    void delete(android.database.sqlite.SQLiteDatabase,com.roscopeco.ormdroid.Entity) -> delete
+com.roscopeco.ormdroid.EntityTypeMapping -> com.roscopeco.ormdroid.EntityTypeMapping:
+    java.lang.String TAG -> TAG
+    java.lang.Class javaType() -> javaType
+    java.lang.String sqlType(java.lang.Class) -> sqlType
+    java.lang.String encodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> encodeValue
+    java.lang.Object decodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Class,android.database.Cursor,int) -> decodeValue
+com.roscopeco.ormdroid.MappingList -> com.roscopeco.ormdroid.MappingList:
+    java.util.LinkedList mappings -> mappings
+    void addMapping(com.roscopeco.ormdroid.TypeMapping) -> addMapping
+    void removeMapping(com.roscopeco.ormdroid.TypeMapping) -> removeMapping
+    com.roscopeco.ormdroid.TypeMapping findMapping(java.lang.Class) -> findMapping
+com.roscopeco.ormdroid.NumericTypeMapping -> com.roscopeco.ormdroid.NumericTypeMapping:
+    java.lang.Class mJavaType -> mJavaType
+    java.lang.String mSqlType -> mSqlType
+    java.lang.Class javaType() -> javaType
+    java.lang.String sqlType(java.lang.Class) -> sqlType
+    java.lang.String encodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> encodeValue
+    java.lang.Object decodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Class,android.database.Cursor,int) -> decodeValue
+com.roscopeco.ormdroid.ORMDroidApplication -> com.roscopeco.ormdroid.ORMDroidApplication:
+    com.roscopeco.ormdroid.ORMDroidApplication singleton -> singleton
+    android.content.Context mContext -> mContext
+    java.lang.String mDBName -> mDBName
+    void initInstance(com.roscopeco.ormdroid.ORMDroidApplication,android.content.Context) -> initInstance
+    boolean isInitialized() -> isInitialized
+    void initialize(android.content.Context) -> initialize
+    com.roscopeco.ormdroid.ORMDroidApplication getSingleton() -> getSingleton
+    android.database.sqlite.SQLiteDatabase getDefaultDatabase() -> getDefaultDatabase
+    void onCreate() -> onCreate
+    void initDatabaseConfig() -> initDatabaseConfig
+    java.lang.String getDatabaseName() -> getDatabaseName
+    android.database.sqlite.SQLiteDatabase getDatabase() -> getDatabase
+com.roscopeco.ormdroid.ORMDroidException -> com.roscopeco.ormdroid.ORMDroidException:
+    long serialVersionUID -> serialVersionUID
+com.roscopeco.ormdroid.Query -> com.roscopeco.ormdroid.Query:
+    java.lang.String TAG -> TAG
+    java.lang.Class mClass -> mClass
+    com.roscopeco.ormdroid.Entity$EntityMapping mEntityMapping -> mEntityMapping
+    java.lang.String customSql -> customSql
+    java.lang.String sqlCache -> sqlCache
+    java.lang.String sqlCache1 -> sqlCache1
+    java.lang.String whereCache -> whereCache
+    com.roscopeco.ormdroid.Query$SQLExpression whereExpr -> whereExpr
+    java.lang.String[] orderByColumns -> orderByColumns
+    int limit -> limit
+    java.lang.StringBuilder joinStrings(java.lang.StringBuilder,java.lang.String[]) -> joinStrings
+    com.roscopeco.ormdroid.Query query(java.lang.Class) -> query
+    com.roscopeco.ormdroid.Query$SQLExpression eql(java.lang.String,java.lang.Object) -> eql
+    com.roscopeco.ormdroid.Query$SQLExpression neq(java.lang.String,java.lang.Object) -> neq
+    com.roscopeco.ormdroid.Query$SQLExpression lt(java.lang.String,java.lang.Object) -> lt
+    com.roscopeco.ormdroid.Query$SQLExpression gt(java.lang.String,java.lang.Object) -> gt
+    com.roscopeco.ormdroid.Query$SQLExpression leq(java.lang.String,java.lang.Object) -> leq
+    com.roscopeco.ormdroid.Query$SQLExpression geq(java.lang.String,java.lang.Object) -> geq
+    com.roscopeco.ormdroid.Query$SQLExpression and(com.roscopeco.ormdroid.Query$SQLExpression[]) -> and
+    com.roscopeco.ormdroid.Query$SQLExpression or(com.roscopeco.ormdroid.Query$SQLExpression[]) -> or
+    com.roscopeco.ormdroid.Query sql(java.lang.String) -> sql
+    com.roscopeco.ormdroid.Query where(com.roscopeco.ormdroid.Query$SQLExpression) -> where
+    com.roscopeco.ormdroid.Query where(java.lang.String) -> where
+    com.roscopeco.ormdroid.Query orderBy(java.lang.String[]) -> orderBy
+    com.roscopeco.ormdroid.Query limit(int) -> limit
+    java.lang.String generate(int) -> generate
+    java.lang.String toSql() -> toSql
+    java.lang.String toString() -> toString
+    com.roscopeco.ormdroid.Entity execute() -> execute
+    com.roscopeco.ormdroid.Entity execute(android.database.sqlite.SQLiteDatabase) -> execute
+    android.database.Cursor executeMultiForCursor() -> executeMultiForCursor
+    java.util.List executeMulti() -> executeMulti
+    android.database.Cursor executeMultiForCursor(android.database.sqlite.SQLiteDatabase) -> executeMultiForCursor
+    java.util.List executeMulti(android.database.sqlite.SQLiteDatabase) -> executeMulti
+com.roscopeco.ormdroid.Query$BinExpr -> com.roscopeco.ormdroid.Query$BinExpr:
+    java.lang.String EQ -> EQ
+    java.lang.String NE -> NE
+    java.lang.String LT -> LT
+    java.lang.String GT -> GT
+    java.lang.String LEQ -> LEQ
+    java.lang.String GEQ -> GEQ
+    java.lang.String op -> op
+    java.lang.String column -> column
+    java.lang.Object value -> value
+    java.lang.String generate() -> generate
+com.roscopeco.ormdroid.Query$LogicalExpr -> com.roscopeco.ormdroid.Query$LogicalExpr:
+    java.lang.String op -> op
+    com.roscopeco.ormdroid.Query$SQLExpression[] operands -> operands
+    java.lang.String generate() -> generate
+com.roscopeco.ormdroid.Query$SQLExpression -> com.roscopeco.ormdroid.Query$SQLExpression:
+    java.lang.String generate() -> generate
+com.roscopeco.ormdroid.StringTypeMapping -> com.roscopeco.ormdroid.StringTypeMapping:
+    java.lang.Class mJavaType -> mJavaType
+    java.lang.String mSqlType -> mSqlType
+    java.lang.Class javaType() -> javaType
+    java.lang.String sqlType(java.lang.Class) -> sqlType
+    java.lang.String encodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> encodeValue
+    java.lang.Object decodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Class,android.database.Cursor,int) -> decodeValue
+com.roscopeco.ormdroid.Table -> com.roscopeco.ormdroid.Table:
+    java.lang.String name() -> name
+com.roscopeco.ormdroid.TypeMapper -> com.roscopeco.ormdroid.TypeMapper:
+    com.roscopeco.ormdroid.MappingList TYPEMAPS -> TYPEMAPS
+    com.roscopeco.ormdroid.TypeMapping mDefaultMapping -> mDefaultMapping
+    java.lang.String sqlType(java.lang.Class) -> sqlType
+    com.roscopeco.ormdroid.TypeMapping getMapping(java.lang.Class) -> getMapping
+    java.lang.String encodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> encodeValue
+    void mapType(com.roscopeco.ormdroid.TypeMapping) -> mapType
+    void setDefaultMapping(com.roscopeco.ormdroid.TypeMapping) -> setDefaultMapping
+com.roscopeco.ormdroid.TypeMapping -> com.roscopeco.ormdroid.TypeMapping:
+    java.lang.Class javaType() -> javaType
+    java.lang.String sqlType(java.lang.Class) -> sqlType
+    java.lang.String encodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Object) -> encodeValue
+    java.lang.Object decodeValue(android.database.sqlite.SQLiteDatabase,java.lang.Class,android.database.Cursor,int) -> decodeValue
+com.roscopeco.ormdroid.TypeMappingException -> com.roscopeco.ormdroid.TypeMappingException:
+    long serialVersionUID -> serialVersionUID

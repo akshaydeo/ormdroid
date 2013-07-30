@@ -1,8 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.roscopeco.ormdroid"
-    android:versionCode="1"
-    android:versionName="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.11" package="com.roscopeco.ormdroid">
 
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16" />
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
 
 </manifest>
