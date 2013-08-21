@@ -6,7 +6,7 @@
 
     <groupId>ormdroid</groupId>
     <artifactId>ormdroid</artifactId>
-    <version>0.11</version>
+    <version>0.12</version>
     <packaging>apklib</packaging>
 
 

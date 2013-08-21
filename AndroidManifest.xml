@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.11" package="com.roscopeco.ormdroid">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.12" package="com.roscopeco.ormdroid">
 
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
 
